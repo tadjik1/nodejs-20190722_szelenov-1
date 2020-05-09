@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Node.JS Course Materials",
   "scripts": {
-    "test": "cross-env NODE_ENV=test mocha --no-warnings --reporter=reporter.js **/*.test.js",
+    "test": "cross-env NODE_ENV=test mocha --no-warnings --reporter=reporter.js --ignore=node_modules/** **/*.test.js",
     "test:local": "cross-env NODE_ENV=test node --no-warnings local.js",
     "lint": "eslint --ignore-pattern 'public' --ignore-pattern '*.test.js' ."
   },
